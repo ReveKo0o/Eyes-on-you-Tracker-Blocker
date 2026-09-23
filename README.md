@@ -31,5 +31,6 @@ https://adblock.turtlecute.org/
 https://adblock-tester.com/
 <img width="1221" height="632" alt="image" src="https://github.com/user-attachments/assets/4c6eb3e1-4267-416d-a3cd-7d19310044c3" />
 https://superadblocktest.com/
-
+Also big thanks for the icon:
+<a href="https://www.flaticon.com/free-icons/animals" title="animals icons">Animals icons created by Iconiyo - Flaticon</a>
 
