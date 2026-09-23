@@ -13,13 +13,13 @@ To be completely honest, this cannot compete with heavyweights like uBlock Origi
 
 
 ## Does It Work on Firefox?
-Because it relies on the Manifest V2 architecture, it currently runs smoothly on Google Chrome, Microsoft Edge, and other Chromium-based browsers. Due to Firefox's different Manifest V3 transition timelines and extension standards, it might require minor adjustments to run natively there.
+Because it relies on the Manifest V2 architecture, it currently runs smoothly on Microsoft Edge, Brave and other Chromium-based browsers. Due to Firefox's different Manifest V3 transition timelines and extension standards, it might require minor adjustments to run natively there.
 
 ## Installation Guide (Developer Mode)
 If you want to test or try it out on your machine, the installation is straightforward:
 
 1. Download this project to your computer (`Code` -> `Download ZIP`, then extract it).
-2. Open Chrome and type `chrome://extensions/` into the address bar, then press Enter.
+2. Open and type `chrome://extensions/` into the address bar, then press Enter.
 3. Enable the **Developer mode** toggle in the top right corner.
 4. Click the **Load unpacked** button in the top left.
 5. Select the extracted extension folder and import it.
