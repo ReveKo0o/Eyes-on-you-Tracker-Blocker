@@ -1,4 +1,4 @@
-# Eyes on you | Tracker Blocker
+# Eyes On You | Tracker Blocker
 
 Sup I developed this project purely out of curiosity and for fun, just to see if I could write my own ad blocker from scratch. Instead of relying on massive, complex tools, I wanted to understand how browser extensions work under the hood and build something with my own hands.
 
