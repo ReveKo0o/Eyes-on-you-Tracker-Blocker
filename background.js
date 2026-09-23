@@ -40,6 +40,10 @@ chrome.webRequest.onBeforeRequest.addListener(
     if (!isShieldActive) return { cancel: false };
 
     const url = details.url;
+    // not block anything about github
+    if (url.includes("github.com") || url.includes("githubusercontent.com")) {
+      return { cancel: false };
+      }
     // check for log
     const isBlocked = blockedPatterns.some(pattern => url.includes(pattern));
 
