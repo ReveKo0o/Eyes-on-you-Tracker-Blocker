@@ -38,8 +38,8 @@
     const adOverlay = document.querySelector('.ad-showing');
     const video = document.querySelector('video');
     if (adOverlay && video) {
-        video.currentTime = video.duration || video.currentTime + 1; // Reklamı hızlıca sonuna götür
-        video.playbackRate = 16.0; // Veya hızı maksimum yap
+        video.currentTime = video.duration || video.currentTime + 1; // end ad asap
+        video.playbackRate = 16.0; // max the playback speedrate
     }
 }, 500);
 
@@ -50,7 +50,7 @@
         });
     }
 
-    // Sayfa ilk yüklendiğinde de çalıştır
+    // Load when the page first loaded
     window.addEventListener('load', removeAds);
     removeAds();
 })();
