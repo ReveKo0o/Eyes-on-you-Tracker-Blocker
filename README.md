@@ -13,7 +13,7 @@ To be completely honest, this cannot compete with heavyweights like uBlock Origi
 
 
 ## Does It Work on Firefox?
-Because it relies on the Manifest V2 architecture, it currently runs smoothly on Microsoft Edge, Brave and other Chromium-based browsers. Due to Firefox's different Manifest V3 transition timelines and extension standards, it might require minor adjustments to run natively there.
+Short answer no. Am i gonna do something about it and add support for firefox? :idk rn
 
 ## Installation Guide (Developer Mode)
 If you want to test or try it out on your machine, the installation is straightforward:
