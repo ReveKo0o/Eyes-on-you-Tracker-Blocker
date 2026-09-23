@@ -1,6 +1,5 @@
 # Eyes On You | Tracker Blocker
-
-Sup I developed this project purely out of curiosity and for fun, just to see if I could write my own ad blocker from scratch. Instead of relying on massive, complex tools, I wanted to understand how browser extensions work under the hood and build something with my own hands.
+I developed this project purely out of curiosity and for fun, just to see if I could write my own ad blocker from scratch. Instead of relying on massive, complex tools, I wanted to understand how browser extensions work under the hood and build something with my own hands.
 
 ## How It Works
 This extension uses a dual-layer strategy:
@@ -8,12 +7,12 @@ This extension uses a dual-layer strategy:
 2. DOM and Page-Level Handling (`content.js`): Especially on platforms like YouTube, it automatically catches stubborn in-stream video ads and skip buttons that bypass network filters, handling them smoothly.(not sure yet but works most of the time)
 
 ## Performance and Test Results
-To be completely honest, this cannot compete with heavyweights like uBlock Origin, which rely on massive global filter lists. However, during rigorous ad-blocking benchmark tests, it achieves close to a 40% success rate (around 36-40%), performing quite well for a custom lightweight script.
+To be completely honest this cannot compete with heavyweights like uBlock Origin, which rely on massive global filter lists. However during rigorous ad-blocking benchmark tests it achieves close to a 40% success rate (around 36-40%), performing quite well for a custom lightweight script.
 *Tip:* If you use the Brave browser and run this extension alongside Brave Shield, the blocking performance and page cleanliness improve even further.
 
 
 ## Does It Work on Firefox?
-Short answer no. Am i gonna do something about it and add support for firefox? :idk rn
+Short answer no. Am i gonna do something about it and add support for firefox? :idk rn we hate v3
 
 ## Installation Guide (Developer Mode)
 If you want to test or try it out on your machine, the installation is straightforward:
