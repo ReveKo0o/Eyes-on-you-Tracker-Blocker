@@ -12,7 +12,7 @@ To be completely honest this cannot compete with heavyweights like uBlock Origin
 
 
 ## Does It Work on Firefox?
-Short answer no. Am i gonna do something about it and add support for firefox? :idk rn we hate v3
+Short answer no. Am i gonna do something about it and add support for firefox? :idk rn 
 
 ## Installation Guide (Developer Mode)
 If you want to test or try it out on your machine, the installation is straightforward:
