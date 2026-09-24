@@ -24,8 +24,10 @@ If you want to test or try it out on your machine, the installation is straightf
 5. Select the extracted extension folder and import it.
 
 Benchmark results in test websites:
-<img width="376" height="520" alt="image" src="https://github.com/user-attachments/assets/2a6bf7f6-f064-464d-9219-643ff7147972" />
-https://adblock.turtlecute.org/
+
+<img width="333" height="518" alt="image" src="https://github.com/user-attachments/assets/30c2dc6b-2233-4a58-a37e-6020446a9684" />
+
+https://adblock.turtlecute.org/ (improved (%93))
 <img width="1111" height="149" alt="image" src="https://github.com/user-attachments/assets/8238b3b1-bd1e-4cdd-aaeb-7b2e450eb3d8" />
 https://adblock-tester.com/
 <img width="1221" height="632" alt="image" src="https://github.com/user-attachments/assets/4c6eb3e1-4267-416d-a3cd-7d19310044c3" />
