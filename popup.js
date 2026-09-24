@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
       countDisplay.textContent = response.blockedCount;
       
       if (response.isShieldActive) {
-        powerSvg.style.color = "#ff00ff"; // mor
+        powerSvg.style.color = "#ff00ff"; // purp
       } else {
-        powerSvg.style.color = "#ff3333"; // kırmızı
+        powerSvg.style.color = "#ff3333"; // red
       }
 
       //  blocked logs
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
           chrome.runtime.sendMessage({ action: "addWhitelist", domain: domain }, (response) => {
             if (response && response.success) {
               updateUI();
-              chrome.tabs.reload(tabs[0].id); // Sayfayı yenile ki reklam engelleyici o sitede tamamen devre dışı kalsın
+              chrome.tabs.reload(tabs[0].id); // giving the tab a quick refresh so the ad blocker steps aside completely
             }
           });
         } catch (err) {
