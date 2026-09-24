@@ -2,7 +2,12 @@ let isShieldActive = true;
 let blockedCount = 0;
 let blockedUrls = [];
 
-// this part does the same thing as uBlockorigin
+// Whitelist default
+let whitelist = [
+  "github.com",
+  "githubusercontent.com"
+];
+
 const blockedPatterns = [
   "google-analytics.com",
   "googletagmanager.com",
@@ -28,10 +33,7 @@ const blockedPatterns = [
   "youtube.com/pagead",
   "googleads.g.doubleclick.net",
   "static.doubleclick.net",
-  "pagead2.googlesyndication.com",
-  "google-analytics.com",
-  "googletagmanager.com"
-
+  "pagead2.googlesyndication.com"
 ];
 
 // catch and block 
@@ -40,10 +42,14 @@ chrome.webRequest.onBeforeRequest.addListener(
     if (!isShieldActive) return { cancel: false };
 
     const url = details.url;
-    // not block anything about github
-    if (url.includes("github.com") || url.includes("githubusercontent.com")) {
+    const initiator = details.initiator || "";
+
+    // whitelist control
+    const isWhitelisted = whitelist.some(domain => initiator.includes(domain) || url.includes(domain));
+    if (isWhitelisted) {
       return { cancel: false };
-      }
+    }
+
     // check for log
     const isBlocked = blockedPatterns.some(pattern => url.includes(pattern));
 
@@ -64,10 +70,18 @@ chrome.webRequest.onBeforeRequest.addListener(
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "getStatus") {
-    sendResponse({ isShieldActive, blockedCount, blockedUrls });
+    sendResponse({ isShieldActive, blockedCount, blockedUrls, whitelist });
   } else if (request.action === "toggleShield") {
     isShieldActive = !isShieldActive;
     sendResponse({ isShieldActive });
+  } else if (request.action === "addWhitelist") {
+    if (request.domain && !whitelist.includes(request.domain)) {
+      whitelist.push(request.domain);
+    }
+    sendResponse({ success: true, whitelist });
+  } else if (request.action === "removeWhitelist") {
+    whitelist = whitelist.filter(d => d !== request.domain);
+    sendResponse({ success: true, whitelist });
   }
   return true;
 });
