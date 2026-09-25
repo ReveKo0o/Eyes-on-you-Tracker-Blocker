@@ -1,4 +1,8 @@
 # Eyes On You | Tracker Blocker
+
+<img width="315" height="527" alt="image" src="https://github.com/user-attachments/assets/e0df78ed-bd73-45dc-b2dc-ecb51e84048d" />
+
+
 I developed this project purely out of curiosity and for fun, just to see if I could write my own ad blocker from scratch. Instead of relying on massive, complex tools, I wanted to understand how browser extensions work under the hood and build something with my own hands.
 
 ## How It Works
@@ -13,6 +17,11 @@ To be completely honest this cannot compete with heavyweights like uBlock Origin
 
 ## Does It Work on Firefox?
 Short answer no. Am i gonna do something about it and add support for firefox? :idk rn 
+
+## Whitelist Feature (White-listing Sites)
+To give users full control over which websites are blocked, I've added a simple yet effective Whitelist feature.
+How to Use: By clicking the "Add current site to whitelist" button on the extension popup, the active website is instantly added to your personal whitelist.
+What It Does: Once a domain is whitelisted, the extension bypasses its rules, allowing all elements and network requests to load normally on that specific site while continuing to protect you everywhere else.
 
 ## Installation Guide (Developer Mode)
 If you want to test or try it out on your machine, the installation is straightforward:
